@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B34DE62C29B07B6C00FC474E /* BoxingDetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DE62B29B07B6C00FC474E /* BoxingDetectorApp.swift */; };
+		B34DE62E29B07B6C00FC474E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DE62D29B07B6C00FC474E /* ContentView.swift */; };
+		B34DE63029B07B6D00FC474E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34DE62F29B07B6D00FC474E /* Assets.xcassets */; };
+		B34DE63329B07B6D00FC474E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34DE63229B07B6D00FC474E /* Preview Assets.xcassets */; };
+		B34DE63D29B07B6D00FC474E /* BoxingDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DE63C29B07B6D00FC474E /* BoxingDetectorTests.swift */; };
+		B34DE64729B07B6D00FC474E /* BoxingDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DE64629B07B6D00FC474E /* BoxingDetectorUITests.swift */; };
+		B34DE64929B07B6D00FC474E /* BoxingDetectorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DE64829B07B6D00FC474E /* BoxingDetectorUITestsLaunchTests.swift */; };
+		B34DE65629B07BA900FC474E /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DE65529B07BA900FC474E /* CameraService.swift */; };
+		B34DE65829B07C4400FC474E /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DE65729B07C4400FC474E /* CameraView.swift */; };
+		B34DE65A29B07CB900FC474E /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DE65929B07CB900FC474E /* CustomCameraView.swift */; };
+		B34DE65D29B07E4600FC474E /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DE65C29B07E4600FC474E /* Predictor.swift */; };
+		B34DE66129B0803A00FC474E /* BoxingActionClassifier_mixed_1.5sec.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B34DE66029B0803A00FC474E /* BoxingActionClassifier_mixed_1.5sec.mlmodel */; };
+		B34DE66329B3F2C600FC474E /* BoxingActionClassifier_mixed_3_4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B34DE66229B3F2C600FC474E /* BoxingActionClassifier_mixed_3_4.mlmodel */; };
+		B3F7376E29B454810056198D /* BoxingActionClassifier_mixed_4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B3F7376D29B454810056198D /* BoxingActionClassifier_mixed_4.mlmodel */; };
+		B3F7377029B520A20056198D /* BoxingActionClassifier_mixed_lessUC.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B3F7376F29B520A20056198D /* BoxingActionClassifier_mixed_lessUC.mlmodel */; };
+		B3F7377429B52B3F0056198D /* AVCaptureDevice+FrameRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F7377129B52B3F0056198D /* AVCaptureDevice+FrameRate.swift */; };
+		B3F7377529B52B3F0056198D /* AVCaptureDeviceInput+Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F7377229B52B3F0056198D /* AVCaptureDeviceInput+Camera.swift */; };
+		B3F7377629B52B3F0056198D /* AVCaptureVideoDataOutput+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F7377329B52B3F0056198D /* AVCaptureVideoDataOutput+PixelFormat.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B34DE63929B07B6D00FC474E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B34DE62029B07B6C00FC474E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B34DE62729B07B6C00FC474E;
+			remoteInfo = BoxingDetector;
+		};
+		B34DE64329B07B6D00FC474E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B34DE62029B07B6C00FC474E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B34DE62729B07B6C00FC474E;
+			remoteInfo = BoxingDetector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B34DE62829B07B6C00FC474E /* BoxingDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxingDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34DE62B29B07B6C00FC474E /* BoxingDetectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxingDetectorApp.swift; sourceTree = "<group>"; };
+		B34DE62D29B07B6C00FC474E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B34DE62F29B07B6D00FC474E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B34DE63229B07B6D00FC474E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B34DE63829B07B6D00FC474E /* BoxingDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxingDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34DE63C29B07B6D00FC474E /* BoxingDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxingDetectorTests.swift; sourceTree = "<group>"; };
+		B34DE64229B07B6D00FC474E /* BoxingDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxingDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34DE64629B07B6D00FC474E /* BoxingDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxingDetectorUITests.swift; sourceTree = "<group>"; };
+		B34DE64829B07B6D00FC474E /* BoxingDetectorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxingDetectorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B34DE65529B07BA900FC474E /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		B34DE65729B07C4400FC474E /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		B34DE65929B07CB900FC474E /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
+		B34DE65B29B07D5000FC474E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B34DE65C29B07E4600FC474E /* Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
+		B34DE66029B0803A00FC474E /* BoxingActionClassifier_mixed_1.5sec.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BoxingActionClassifier_mixed_1.5sec.mlmodel; sourceTree = "<group>"; };
+		B34DE66229B3F2C600FC474E /* BoxingActionClassifier_mixed_3_4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BoxingActionClassifier_mixed_3_4.mlmodel; sourceTree = "<group>"; };
+		B3F7376D29B454810056198D /* BoxingActionClassifier_mixed_4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BoxingActionClassifier_mixed_4.mlmodel; sourceTree = "<group>"; };
+		B3F7376F29B520A20056198D /* BoxingActionClassifier_mixed_lessUC.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BoxingActionClassifier_mixed_lessUC.mlmodel; sourceTree = "<group>"; };
+		B3F7377129B52B3F0056198D /* AVCaptureDevice+FrameRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+FrameRate.swift"; sourceTree = "<group>"; };
+		B3F7377229B52B3F0056198D /* AVCaptureDeviceInput+Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDeviceInput+Camera.swift"; sourceTree = "<group>"; };
+		B3F7377329B52B3F0056198D /* AVCaptureVideoDataOutput+PixelFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureVideoDataOutput+PixelFormat.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B34DE62529B07B6C00FC474E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B34DE63529B07B6D00FC474E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B34DE63F29B07B6D00FC474E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B34DE61F29B07B6C00FC474E = {
+			isa = PBXGroup;
+			children = (
+				B34DE62A29B07B6C00FC474E /* BoxingDetector */,
+				B34DE63B29B07B6D00FC474E /* BoxingDetectorTests */,
+				B34DE64529B07B6D00FC474E /* BoxingDetectorUITests */,
+				B34DE62929B07B6C00FC474E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B34DE62929B07B6C00FC474E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B34DE62829B07B6C00FC474E /* BoxingDetector.app */,
+				B34DE63829B07B6D00FC474E /* BoxingDetectorTests.xctest */,
+				B34DE64229B07B6D00FC474E /* BoxingDetectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B34DE62A29B07B6C00FC474E /* BoxingDetector */ = {
+			isa = PBXGroup;
+			children = (
+				B3F7376F29B520A20056198D /* BoxingActionClassifier_mixed_lessUC.mlmodel */,
+				B3F7376D29B454810056198D /* BoxingActionClassifier_mixed_4.mlmodel */,
+				B34DE66229B3F2C600FC474E /* BoxingActionClassifier_mixed_3_4.mlmodel */,
+				B34DE66029B0803A00FC474E /* BoxingActionClassifier_mixed_1.5sec.mlmodel */,
+				B3F7377929B8F9290056198D /* AVCapture */,
+				B34DE62B29B07B6C00FC474E /* BoxingDetectorApp.swift */,
+				B34DE62D29B07B6C00FC474E /* ContentView.swift */,
+				B34DE65529B07BA900FC474E /* CameraService.swift */,
+				B34DE65729B07C4400FC474E /* CameraView.swift */,
+				B34DE65929B07CB900FC474E /* CustomCameraView.swift */,
+				B34DE65C29B07E4600FC474E /* Predictor.swift */,
+				B34DE62F29B07B6D00FC474E /* Assets.xcassets */,
+				B34DE65B29B07D5000FC474E /* Info.plist */,
+				B34DE63129B07B6D00FC474E /* Preview Content */,
+			);
+			path = BoxingDetector;
+			sourceTree = "<group>";
+		};
+		B34DE63129B07B6D00FC474E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B34DE63229B07B6D00FC474E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B34DE63B29B07B6D00FC474E /* BoxingDetectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				B34DE63C29B07B6D00FC474E /* BoxingDetectorTests.swift */,
+			);
+			path = BoxingDetectorTests;
+			sourceTree = "<group>";
+		};
+		B34DE64529B07B6D00FC474E /* BoxingDetectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B34DE64629B07B6D00FC474E /* BoxingDetectorUITests.swift */,
+				B34DE64829B07B6D00FC474E /* BoxingDetectorUITestsLaunchTests.swift */,
+			);
+			path = BoxingDetectorUITests;
+			sourceTree = "<group>";
+		};
+		B3F7377929B8F9290056198D /* AVCapture */ = {
+			isa = PBXGroup;
+			children = (
+				B3F7377129B52B3F0056198D /* AVCaptureDevice+FrameRate.swift */,
+				B3F7377229B52B3F0056198D /* AVCaptureDeviceInput+Camera.swift */,
+				B3F7377329B52B3F0056198D /* AVCaptureVideoDataOutput+PixelFormat.swift */,
+			);
+			path = AVCapture;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B34DE62729B07B6C00FC474E /* BoxingDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B34DE64C29B07B6D00FC474E /* Build configuration list for PBXNativeTarget "BoxingDetector" */;
+			buildPhases = (
+				B34DE62429B07B6C00FC474E /* Sources */,
+				B34DE62529B07B6C00FC474E /* Frameworks */,
+				B34DE62629B07B6C00FC474E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoxingDetector;
+			productName = BoxingDetector;
+			productReference = B34DE62829B07B6C00FC474E /* BoxingDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B34DE63729B07B6D00FC474E /* BoxingDetectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B34DE64F29B07B6D00FC474E /* Build configuration list for PBXNativeTarget "BoxingDetectorTests" */;
+			buildPhases = (
+				B34DE63429B07B6D00FC474E /* Sources */,
+				B34DE63529B07B6D00FC474E /* Frameworks */,
+				B34DE63629B07B6D00FC474E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B34DE63A29B07B6D00FC474E /* PBXTargetDependency */,
+			);
+			name = BoxingDetectorTests;
+			productName = BoxingDetectorTests;
+			productReference = B34DE63829B07B6D00FC474E /* BoxingDetectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B34DE64129B07B6D00FC474E /* BoxingDetectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B34DE65229B07B6D00FC474E /* Build configuration list for PBXNativeTarget "BoxingDetectorUITests" */;
+			buildPhases = (
+				B34DE63E29B07B6D00FC474E /* Sources */,
+				B34DE63F29B07B6D00FC474E /* Frameworks */,
+				B34DE64029B07B6D00FC474E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B34DE64429B07B6D00FC474E /* PBXTargetDependency */,
+			);
+			name = BoxingDetectorUITests;
+			productName = BoxingDetectorUITests;
+			productReference = B34DE64229B07B6D00FC474E /* BoxingDetectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B34DE62029B07B6C00FC474E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B34DE62729B07B6C00FC474E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					B34DE63729B07B6D00FC474E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B34DE62729B07B6C00FC474E;
+					};
+					B34DE64129B07B6D00FC474E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B34DE62729B07B6C00FC474E;
+					};
+				};
+			};
+			buildConfigurationList = B34DE62329B07B6C00FC474E /* Build configuration list for PBXProject "BoxingDetector" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B34DE61F29B07B6C00FC474E;
+			productRefGroup = B34DE62929B07B6C00FC474E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B34DE62729B07B6C00FC474E /* BoxingDetector */,
+				B34DE63729B07B6D00FC474E /* BoxingDetectorTests */,
+				B34DE64129B07B6D00FC474E /* BoxingDetectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B34DE62629B07B6C00FC474E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34DE63329B07B6D00FC474E /* Preview Assets.xcassets in Resources */,
+				B34DE63029B07B6D00FC474E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B34DE63629B07B6D00FC474E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B34DE64029B07B6D00FC474E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B34DE62429B07B6C00FC474E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34DE66129B0803A00FC474E /* BoxingActionClassifier_mixed_1.5sec.mlmodel in Sources */,
+				B3F7377529B52B3F0056198D /* AVCaptureDeviceInput+Camera.swift in Sources */,
+				B34DE62E29B07B6C00FC474E /* ContentView.swift in Sources */,
+				B3F7377429B52B3F0056198D /* AVCaptureDevice+FrameRate.swift in Sources */,
+				B34DE62C29B07B6C00FC474E /* BoxingDetectorApp.swift in Sources */,
+				B34DE65D29B07E4600FC474E /* Predictor.swift in Sources */,
+				B3F7376E29B454810056198D /* BoxingActionClassifier_mixed_4.mlmodel in Sources */,
+				B34DE65A29B07CB900FC474E /* CustomCameraView.swift in Sources */,
+				B34DE66329B3F2C600FC474E /* BoxingActionClassifier_mixed_3_4.mlmodel in Sources */,
+				B3F7377629B52B3F0056198D /* AVCaptureVideoDataOutput+PixelFormat.swift in Sources */,
+				B3F7377029B520A20056198D /* BoxingActionClassifier_mixed_lessUC.mlmodel in Sources */,
+				B34DE65629B07BA900FC474E /* CameraService.swift in Sources */,
+				B34DE65829B07C4400FC474E /* CameraView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B34DE63429B07B6D00FC474E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34DE63D29B07B6D00FC474E /* BoxingDetectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B34DE63E29B07B6D00FC474E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34DE64729B07B6D00FC474E /* BoxingDetectorUITests.swift in Sources */,
+				B34DE64929B07B6D00FC474E /* BoxingDetectorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B34DE63A29B07B6D00FC474E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B34DE62729B07B6C00FC474E /* BoxingDetector */;
+			targetProxy = B34DE63929B07B6D00FC474E /* PBXContainerItemProxy */;
+		};
+		B34DE64429B07B6D00FC474E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B34DE62729B07B6C00FC474E /* BoxingDetector */;
+			targetProxy = B34DE64329B07B6D00FC474E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B34DE64A29B07B6D00FC474E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B34DE64B29B07B6D00FC474E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B34DE64D29B07B6D00FC474E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BoxingDetector/Preview Content\"";
+				DEVELOPMENT_TEAM = TB6ZQR74PN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BoxingDetector/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Recognizing user body actions";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuezhengwu.swiftproject.ml.boxing.BoxingDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B34DE64E29B07B6D00FC474E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BoxingDetector/Preview Content\"";
+				DEVELOPMENT_TEAM = TB6ZQR74PN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BoxingDetector/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Recognizing user body actions";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuezhengwu.swiftproject.ml.boxing.BoxingDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B34DE65029B07B6D00FC474E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TB6ZQR74PN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuezhengwu.swiftproject.ml.boxing.BoxingDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoxingDetector.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BoxingDetector";
+			};
+			name = Debug;
+		};
+		B34DE65129B07B6D00FC474E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TB6ZQR74PN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuezhengwu.swiftproject.ml.boxing.BoxingDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoxingDetector.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BoxingDetector";
+			};
+			name = Release;
+		};
+		B34DE65329B07B6D00FC474E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TB6ZQR74PN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuezhengwu.swiftproject.ml.boxing.BoxingDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BoxingDetector;
+			};
+			name = Debug;
+		};
+		B34DE65429B07B6D00FC474E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TB6ZQR74PN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuezhengwu.swiftproject.ml.boxing.BoxingDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BoxingDetector;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B34DE62329B07B6C00FC474E /* Build configuration list for PBXProject "BoxingDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B34DE64A29B07B6D00FC474E /* Debug */,
+				B34DE64B29B07B6D00FC474E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B34DE64C29B07B6D00FC474E /* Build configuration list for PBXNativeTarget "BoxingDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B34DE64D29B07B6D00FC474E /* Debug */,
+				B34DE64E29B07B6D00FC474E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B34DE64F29B07B6D00FC474E /* Build configuration list for PBXNativeTarget "BoxingDetectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B34DE65029B07B6D00FC474E /* Debug */,
+				B34DE65129B07B6D00FC474E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B34DE65229B07B6D00FC474E /* Build configuration list for PBXNativeTarget "BoxingDetectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B34DE65329B07B6D00FC474E /* Debug */,
+				B34DE65429B07B6D00FC474E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B34DE62029B07B6C00FC474E /* Project object */;
+}
